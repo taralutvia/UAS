@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int domba,umur;
+     cout<<"Masukkan nomor urut domba  :";
+        cin>>domba;
+
+    for(int i=0;i<domba;i++){                  //input nilai
+        cout<<"Masukkan umur domba    :";
+        cin>>umur;
+    }
+    cout<<"Tampilkan data domba"<<endl;
+    for(int a=0;a<umur;a++){
+        cout<<"Domba ke = "<<domba<<" dengan umur = "<<umur<<endl;
+    }
+
+    return 0;
+}
