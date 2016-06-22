@@ -1,0 +1,54 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float sum_jarak=0;
+    float sum_waktu=0;
+    float kecepatan;
+    int   jarak,waktu;
+    float angka[6][2];
+    int   i[2];
+    
+    
+cout<<"data pelari ke - ";
+cin>>i[2];
+
+    for(jarak=0;jarak<2;jarak++){
+        for(waktu=0;waktu<=1;waktu++){
+                if(waktu!=0){
+                cout<<"Waktu(s) : ";
+            cin>>angka[jarak][waktu];
+            }else{
+            cout<<"Jarak(m) : ";
+            cin>>angka[jarak][waktu];}
+
+
+        }
+          cout<<endl;
+        
+    }
+    system("cls");
+
+    cout<<"Jarak(m)| Waktu(s) "<<endl;
+    for(jarak=0;jarak<2;jarak++){
+        for(waktu=0;waktu<=1;waktu++){
+                if(waktu!=0){
+                cout<<angka[jarak][waktu]<<"     ";
+                sum_waktu=sum_waktu+angka[jarak][waktu];
+            }else{
+            cout<<"  "<<angka[jarak][waktu]<<"     |";
+            sum_jarak=sum_jarak+angka[jarak][waktu];}
+
+        }
+        cout<<endl;
+    }
+        kecepatan=sum_jarak/sum_waktu;
+    cout<<"             TOTAL        "<<endl<<endl;
+    cout<<sum_jarak<<"m      |"<<sum_waktu<<"s"<<endl<<endl;
+    cout<<"Kecepatan = " <<kecepatan<<"m/s";
+
+
+return 0;
+}
+        
